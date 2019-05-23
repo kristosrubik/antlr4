@@ -1,0 +1,8 @@
+create file CppCode  ("Hello World!" on c++)
+copy grammar file CPP14.g4  (https://github.com/antlr/grammars-v4/blob/master/cpp/CPP14.g4)
+
+1) cd C:\Javalib  //go to local folder with progect
+2) antlr4 CPP14.g4 
+   java org.antlr.v4.Tool CPP.g4  //generate Lexer and Parser files
+3) "C:\Program Files\Java\jdk1.8.0_121\bin\javac.exe" CPP*.java  //compail everything and add in new folder 
+4) java org.antlr.v4.gui.TestRig CPP translationunit -gui CppCode.cc //parse code and save picture :)
